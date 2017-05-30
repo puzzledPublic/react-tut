@@ -5,6 +5,7 @@ class RandomNumber extends React.Component{
         super(props);
         this.updateNumber = this.updateNumber.bind(this);
     }
+    //부모 컴포넌트에서 넘어온 state값을 변경하는 메소드를 실행
     updateNumber() {
         let value = Math.round(Math.random()*100);
         this.props.onUpdate(value);
